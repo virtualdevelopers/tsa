@@ -8787,3 +8787,840 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1429469493.166
     'REQUEST_TIME' => 1429469493
 ]
+2015-04-20 07:06:30 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Vehicle::time_start' in F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('time_start')
+#1 F:\xampp\htdocs\tsa\frontend\views\site\index.php(77): yii\db\BaseActiveRecord->__get('time_start')
+#2 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\View.php(325): require('F:\\xampp\\htdocs...')
+#3 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('F:\\xampp\\htdocs...', Array)
+#4 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('F:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#5 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#6 F:\xampp\htdocs\tsa\frontend\controllers\SiteController.php(96): yii\base\Controller->render('index', Array)
+#7 [internal function]: frontend\controllers\SiteController->actionIndex()
+#8 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#11 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#12 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 F:\xampp\htdocs\tsa\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-04-20 07:06:30 [::1][-][-][info][application] $_COOKIE = [
+    '_identity' => '50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/tsa/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Windows Live\\Shared;C:\\Program Files\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'F:/xampp/htdocs/tsa/frontend/web/index.php'
+    'REMOTE_PORT' => '49797'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/tsa/frontend/web/'
+    'SCRIPT_NAME' => '/tsa/frontend/web/index.php'
+    'PHP_SELF' => '/tsa/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429506389.985
+    'REQUEST_TIME' => 1429506389
+]
+2015-04-20 07:06:49 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Vehicle::time_start' in F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('time_start')
+#1 F:\xampp\htdocs\tsa\frontend\views\site\index.php(77): yii\db\BaseActiveRecord->__get('time_start')
+#2 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\View.php(325): require('F:\\xampp\\htdocs...')
+#3 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('F:\\xampp\\htdocs...', Array)
+#4 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('F:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#5 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#6 F:\xampp\htdocs\tsa\frontend\controllers\SiteController.php(96): yii\base\Controller->render('index', Array)
+#7 [internal function]: frontend\controllers\SiteController->actionIndex()
+#8 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#11 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#12 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 F:\xampp\htdocs\tsa\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-04-20 07:06:49 [::1][-][-][info][application] $_COOKIE = [
+    '_identity' => '50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/tsa/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Windows Live\\Shared;C:\\Program Files\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'F:/xampp/htdocs/tsa/frontend/web/index.php'
+    'REMOTE_PORT' => '49807'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/tsa/frontend/web/'
+    'SCRIPT_NAME' => '/tsa/frontend/web/index.php'
+    'PHP_SELF' => '/tsa/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429506409.217
+    'REQUEST_TIME' => 1429506409
+]
+2015-04-20 07:15:45 [::1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "vehicle-images/create".' in F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('vehicle-images/...', Array)
+#1 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 F:\xampp\htdocs\tsa\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\xampp\htdocs\tsa\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-20 07:15:45 [::1][1][-][info][application] $_GET = [
+    'r' => 'vehicle-images/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '19b7c56ab420a91c5953f4878abde169beb7d6cbd4db240cffc2ef88937d3331a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MUNaVp2p2he3riMot1JolXw_bosU6e-A\";}'
+    'PHPSESSID' => '3arrte3om8usavus8ncb5j4r93'
+    '_identity' => '50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=19b7c56ab420a91c5953f4878abde169beb7d6cbd4db240cffc2ef88937d3331a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MUNaVp2p2he3riMot1JolXw_bosU6e-A%22%3B%7D; PHPSESSID=3arrte3om8usavus8ncb5j4r93; _identity=50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Windows Live\\Shared;C:\\Program Files\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'F:/xampp/htdocs/tsa/frontend/web/index.php'
+    'REMOTE_PORT' => '49926'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vehicle-images%2Fcreate'
+    'REQUEST_URI' => '/tsa/frontend/web/index.php?r=vehicle-images%2Fcreate'
+    'SCRIPT_NAME' => '/tsa/frontend/web/index.php'
+    'PHP_SELF' => '/tsa/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429506945.311
+    'REQUEST_TIME' => 1429506945
+]
+2015-04-20 07:16:52 [::1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#2 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('vehicle-imges/c...', Array)
+#3 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 F:\xampp\htdocs\tsa\frontend\web\index.php(18): yii\base\Application->run()
+#5 {main}
+2015-04-20 07:16:52 [::1][1][-][info][application] $_GET = [
+    'r' => 'vehicle-imges/create'
+]
+
+$_POST = [
+    'file_id' => '0'
+]
+
+$_FILES = [
+    'file_data' => [
+        'name' => 'Hydrangeas.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'F:\\xampp\\tmp\\phpEA8A.tmp'
+        'error' => 0
+        'size' => 595284
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '19b7c56ab420a91c5953f4878abde169beb7d6cbd4db240cffc2ef88937d3331a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MUNaVp2p2he3riMot1JolXw_bosU6e-A\";}'
+    'PHPSESSID' => '3arrte3om8usavus8ncb5j4r93'
+    '_identity' => '50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '595572'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryiWciWg3SXZcoYm7D'
+    'HTTP_REFERER' => 'http://localhost/tsa/frontend/web/index.php?r=vehicle-imges%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=19b7c56ab420a91c5953f4878abde169beb7d6cbd4db240cffc2ef88937d3331a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MUNaVp2p2he3riMot1JolXw_bosU6e-A%22%3B%7D; PHPSESSID=3arrte3om8usavus8ncb5j4r93; _identity=50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Windows Live\\Shared;C:\\Program Files\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'F:/xampp/htdocs/tsa/frontend/web/index.php'
+    'REMOTE_PORT' => '49948'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=vehicle-imges%2Fcreate'
+    'REQUEST_URI' => '/tsa/frontend/web/index.php?r=vehicle-imges%2Fcreate'
+    'SCRIPT_NAME' => '/tsa/frontend/web/index.php'
+    'PHP_SELF' => '/tsa/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429507012.13
+    'REQUEST_TIME' => 1429507012
+]
+2015-04-20 12:55:03 [::1][1][3arrte3om8usavus8ncb5j4r93][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ':', expecting ']'' in F:\xampp\htdocs\tsa\frontend\views\vehicle\_form.php:305
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-20 12:55:03 [::1][1][3arrte3om8usavus8ncb5j4r93][info][application] $_GET = [
+    'r' => 'vehicle/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '19b7c56ab420a91c5953f4878abde169beb7d6cbd4db240cffc2ef88937d3331a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MUNaVp2p2he3riMot1JolXw_bosU6e-A\";}'
+    'PHPSESSID' => '3arrte3om8usavus8ncb5j4r93'
+    '_identity' => '50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=19b7c56ab420a91c5953f4878abde169beb7d6cbd4db240cffc2ef88937d3331a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MUNaVp2p2he3riMot1JolXw_bosU6e-A%22%3B%7D; PHPSESSID=3arrte3om8usavus8ncb5j4r93; _identity=50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Windows Live\\Shared;C:\\Program Files\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'F:/xampp/htdocs/tsa/frontend/web/index.php'
+    'REMOTE_PORT' => '54191'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vehicle%2Fcreate'
+    'REQUEST_URI' => '/tsa/frontend/web/index.php?r=vehicle%2Fcreate'
+    'SCRIPT_NAME' => '/tsa/frontend/web/index.php'
+    'PHP_SELF' => '/tsa/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429527302.998
+    'REQUEST_TIME' => 1429527302
+]
+2015-04-20 12:56:43 [::1][1][3arrte3om8usavus8ncb5j4r93][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ']'' in F:\xampp\htdocs\tsa\frontend\views\vehicle\_form.php:305
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-20 12:56:43 [::1][1][3arrte3om8usavus8ncb5j4r93][info][application] $_GET = [
+    'r' => 'vehicle/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '19b7c56ab420a91c5953f4878abde169beb7d6cbd4db240cffc2ef88937d3331a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MUNaVp2p2he3riMot1JolXw_bosU6e-A\";}'
+    'PHPSESSID' => '3arrte3om8usavus8ncb5j4r93'
+    '_identity' => '50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=19b7c56ab420a91c5953f4878abde169beb7d6cbd4db240cffc2ef88937d3331a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MUNaVp2p2he3riMot1JolXw_bosU6e-A%22%3B%7D; PHPSESSID=3arrte3om8usavus8ncb5j4r93; _identity=50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Windows Live\\Shared;C:\\Program Files\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'F:/xampp/htdocs/tsa/frontend/web/index.php'
+    'REMOTE_PORT' => '54221'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vehicle%2Fcreate'
+    'REQUEST_URI' => '/tsa/frontend/web/index.php?r=vehicle%2Fcreate'
+    'SCRIPT_NAME' => '/tsa/frontend/web/index.php'
+    'PHP_SELF' => '/tsa/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429527403.884
+    'REQUEST_TIME' => 1429527403
+]
+2015-04-20 12:57:08 [::1][1][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lot_id' cannot be null' in F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\db\Command.php:768
+Stack trace:
+#0 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\db\Command.php(768): PDOStatement->execute()
+#1 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\db\ActiveRecord.php(459): yii\db\Command->execute()
+#2 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\db\ActiveRecord.php(422): yii\db\ActiveRecord->insertInternal(NULL)
+#3 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\db\BaseActiveRecord.php(582): yii\db\ActiveRecord->insert(true, NULL)
+#4 F:\xampp\htdocs\tsa\frontend\controllers\VehicleController.php(89): yii\db\BaseActiveRecord->save()
+#5 [internal function]: frontend\controllers\VehicleController->actionCreate()
+#6 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#9 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('vehicle/create', Array)
+#10 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 F:\xampp\htdocs\tsa\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lot_id' cannot be null
+The SQL being executed was: INSERT INTO `vehicle` (`make`, `model`, `year_2`, `transmission`, `series`, `edition`, `conditions`, `mileage`, `areo`, `description`, `navigation_sys`, `power_lock`, `power_steer`, `remote_key`, `tv`, `air_bag_driver`, `air_bag_passenger`, `air_bag_side`, `alarm`, `lock_brake`, `fog_light`, `transaction_cont`, `power_windows`, `rear_windows_def`, `rear_window_wiper`, `tint_glass`, `alloy_wheels`, `sun_roof`, `third_row_seats`, `tow_package`, `bidding_price`, `garage_id`, `time_left`, `sale_status`, `status`, `reg_no`, `user_id`, `color`, `manufacture`, `type_2`, `date_reg`, `trim_color`, `doors`, `last_owner`, `engine_size`, `vin`, `mot_exp_date`, `v5_preset`, `green_slip`, `imported`, `service_history`, `fuel`, `lot_id`, `users_id`, `time_start`) VALUES ('', '', NULL, '', '', '', '', '', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '', NULL, '', '', '', '', '', '', '', NULL, '', '', '', '', '', NULL, '', '', '', '', '', NULL, '1', '2015-04-20 12:57:08')' in F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\db\Schema.php:534
+Stack trace:
+#0 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\db\Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ve...')
+#1 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\db\ActiveRecord.php(459): yii\db\Command->execute()
+#2 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\db\ActiveRecord.php(422): yii\db\ActiveRecord->insertInternal(NULL)
+#3 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\db\BaseActiveRecord.php(582): yii\db\ActiveRecord->insert(true, NULL)
+#4 F:\xampp\htdocs\tsa\frontend\controllers\VehicleController.php(89): yii\db\BaseActiveRecord->save()
+#5 [internal function]: frontend\controllers\VehicleController->actionCreate()
+#6 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#9 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('vehicle/create', Array)
+#10 F:\xampp\htdocs\tsa\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 F:\xampp\htdocs\tsa\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'lot_id' cannot be null
+)
+
+2015-04-20 12:57:08 [::1][1][-][info][application] $_GET = [
+    'r' => 'vehicle/create'
+]
+
+$_POST = [
+    '_csrf' => 'a2piSlouOGsmPywrDF4KG1kCB3koR3UEH1soJTZ2TzQJBREfbEsVKg=='
+    'Vehicle' => [
+        'make' => ''
+        'model' => ''
+        'year_2' => ''
+        'transmission' => ''
+        'series' => ''
+        'edition' => ''
+        'conditions' => ''
+        'mileage' => ''
+        'areo' => ''
+        'description' => ''
+        'navigation_sys' => '0'
+        'power_lock' => '0'
+        'power_steer' => '0'
+        'remote_key' => '0'
+        'tv' => '0'
+        'air_bag_driver' => '0'
+        'air_bag_passenger' => '0'
+        'air_bag_side' => '0'
+        'alarm' => '0'
+        'lock_brake' => '0'
+        'fog_light' => '0'
+        'transaction_cont' => '0'
+        'power_windows' => '0'
+        'rear_windows_def' => '0'
+        'rear_window_wiper' => '0'
+        'tint_glass' => '0'
+        'alloy_wheels' => '0'
+        'sun_roof' => '0'
+        'third_row_seats' => '0'
+        'tow_package' => '0'
+        'bidding_price' => ''
+        'garage_id' => ''
+        'time_left' => ''
+        'sale_status' => ''
+        'status' => ''
+        'reg_no' => ''
+        'user_id' => ''
+        'color' => ''
+        'manufacture' => ''
+        'type_2' => ''
+        'date_reg' => ''
+        'trim_color' => ''
+        'doors' => ''
+        'last_owner' => ''
+        'engine_size' => ''
+        'vin' => ''
+        'mot_exp_date' => ''
+        'v5_preset' => ''
+        'green_slip' => ''
+        'imported' => ''
+        'service_history' => ''
+        'fuel' => ''
+        'lot_id' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '19b7c56ab420a91c5953f4878abde169beb7d6cbd4db240cffc2ef88937d3331a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MUNaVp2p2he3riMot1JolXw_bosU6e-A\";}'
+    'PHPSESSID' => '3arrte3om8usavus8ncb5j4r93'
+    '_identity' => '50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1405'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/tsa/frontend/web/index.php?r=vehicle%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=19b7c56ab420a91c5953f4878abde169beb7d6cbd4db240cffc2ef88937d3331a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MUNaVp2p2he3riMot1JolXw_bosU6e-A%22%3B%7D; PHPSESSID=3arrte3om8usavus8ncb5j4r93; _identity=50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Windows Live\\Shared;C:\\Program Files\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'F:/xampp/htdocs/tsa/frontend/web/index.php'
+    'REMOTE_PORT' => '54241'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=vehicle%2Fcreate'
+    'REQUEST_URI' => '/tsa/frontend/web/index.php?r=vehicle%2Fcreate'
+    'SCRIPT_NAME' => '/tsa/frontend/web/index.php'
+    'PHP_SELF' => '/tsa/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429527428.615
+    'REQUEST_TIME' => 1429527428
+]
+2015-04-20 18:36:53 [::1][1][8891l49haa08o9mijb6fqb3bb4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'TimePicker' not found' in C:\xampp\htdocs\tsa\frontend\views\vehicle\_form.php:210
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-20 18:36:52 [::1][1][8891l49haa08o9mijb6fqb3bb4][info][application] $_GET = [
+    'r' => 'vehicle/create'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '30b122763fb5c8f96ff32f810b98fa0994aee315e5f6ba0d8a8c35980fa36933a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6qBmIg1ekW2UZ8BKsoWJEr6BMWVsJ3ry\";}'
+    'PHPSESSID' => '8891l49haa08o9mijb6fqb3bb4'
+    '_identity' => '50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/tsa/frontend/web/index.php?r=vehicle%2Fmygarage&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=30b122763fb5c8f96ff32f810b98fa0994aee315e5f6ba0d8a8c35980fa36933a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226qBmIg1ekW2UZ8BKsoWJEr6BMWVsJ3ry%22%3B%7D; PHPSESSID=8891l49haa08o9mijb6fqb3bb4; _identity=50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/0.9.8y PHP/5.4.22 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/0.9.8y PHP/5.4.22'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/tsa/frontend/web/index.php'
+    'REMOTE_PORT' => '60816'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vehicle%2Fcreate&id=1'
+    'REQUEST_URI' => '/tsa/frontend/web/index.php?r=vehicle%2Fcreate&id=1'
+    'SCRIPT_NAME' => '/tsa/frontend/web/index.php'
+    'PHP_SELF' => '/tsa/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429547812.313
+    'REQUEST_TIME' => 1429547812
+]
+2015-04-20 18:37:15 [::1][1][8891l49haa08o9mijb6fqb3bb4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'janisto\timepicker\TimePicker' not found' in C:\xampp\htdocs\tsa\frontend\views\vehicle\_form.php:211
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-20 18:37:14 [::1][1][8891l49haa08o9mijb6fqb3bb4][info][application] $_GET = [
+    'r' => 'vehicle/create'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '30b122763fb5c8f96ff32f810b98fa0994aee315e5f6ba0d8a8c35980fa36933a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6qBmIg1ekW2UZ8BKsoWJEr6BMWVsJ3ry\";}'
+    'PHPSESSID' => '8891l49haa08o9mijb6fqb3bb4'
+    '_identity' => '50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/tsa/frontend/web/index.php?r=vehicle%2Fmygarage&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=30b122763fb5c8f96ff32f810b98fa0994aee315e5f6ba0d8a8c35980fa36933a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226qBmIg1ekW2UZ8BKsoWJEr6BMWVsJ3ry%22%3B%7D; PHPSESSID=8891l49haa08o9mijb6fqb3bb4; _identity=50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/0.9.8y PHP/5.4.22 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/0.9.8y PHP/5.4.22'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/tsa/frontend/web/index.php'
+    'REMOTE_PORT' => '60819'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vehicle%2Fcreate&id=1'
+    'REQUEST_URI' => '/tsa/frontend/web/index.php?r=vehicle%2Fcreate&id=1'
+    'SCRIPT_NAME' => '/tsa/frontend/web/index.php'
+    'PHP_SELF' => '/tsa/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429547834.144
+    'REQUEST_TIME' => 1429547834
+]
+2015-04-20 18:38:43 [::1][1][8891l49haa08o9mijb6fqb3bb4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'janisto\timepicker\TimePicker' not found' in C:\xampp\htdocs\tsa\frontend\views\vehicle\_form.php:212
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-20 18:38:42 [::1][1][8891l49haa08o9mijb6fqb3bb4][info][application] $_GET = [
+    'r' => 'vehicle/create'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '30b122763fb5c8f96ff32f810b98fa0994aee315e5f6ba0d8a8c35980fa36933a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6qBmIg1ekW2UZ8BKsoWJEr6BMWVsJ3ry\";}'
+    'PHPSESSID' => '8891l49haa08o9mijb6fqb3bb4'
+    '_identity' => '50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/tsa/frontend/web/index.php?r=vehicle%2Fmygarage&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=30b122763fb5c8f96ff32f810b98fa0994aee315e5f6ba0d8a8c35980fa36933a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226qBmIg1ekW2UZ8BKsoWJEr6BMWVsJ3ry%22%3B%7D; PHPSESSID=8891l49haa08o9mijb6fqb3bb4; _identity=50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/0.9.8y PHP/5.4.22 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/0.9.8y PHP/5.4.22'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/tsa/frontend/web/index.php'
+    'REMOTE_PORT' => '60826'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vehicle%2Fcreate&id=1'
+    'REQUEST_URI' => '/tsa/frontend/web/index.php?r=vehicle%2Fcreate&id=1'
+    'SCRIPT_NAME' => '/tsa/frontend/web/index.php'
+    'PHP_SELF' => '/tsa/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429547922.299
+    'REQUEST_TIME' => 1429547922
+]
+2015-04-20 18:42:26 [::1][1][8891l49haa08o9mijb6fqb3bb4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'janisto\timepicker\TimePicker' not found' in C:\xampp\htdocs\tsa\frontend\views\vehicle\_form.php:212
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-20 18:42:25 [::1][1][8891l49haa08o9mijb6fqb3bb4][info][application] $_GET = [
+    'r' => 'vehicle/create'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '30b122763fb5c8f96ff32f810b98fa0994aee315e5f6ba0d8a8c35980fa36933a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6qBmIg1ekW2UZ8BKsoWJEr6BMWVsJ3ry\";}'
+    'PHPSESSID' => '8891l49haa08o9mijb6fqb3bb4'
+    '_identity' => '50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/tsa/frontend/web/index.php?r=vehicle%2Fmygarage&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=30b122763fb5c8f96ff32f810b98fa0994aee315e5f6ba0d8a8c35980fa36933a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226qBmIg1ekW2UZ8BKsoWJEr6BMWVsJ3ry%22%3B%7D; PHPSESSID=8891l49haa08o9mijb6fqb3bb4; _identity=50c400ce58190e2347ad934c14384d2ff9f15ef69d203a7a0ec9cbfb572f3c78a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227ZKpSN2Hd1WmcaPaDdnsds_d-O1u1KcF%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/0.9.8y PHP/5.4.22 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/0.9.8y PHP/5.4.22'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/tsa/frontend/web/index.php'
+    'REMOTE_PORT' => '60843'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vehicle%2Fcreate&id=1'
+    'REQUEST_URI' => '/tsa/frontend/web/index.php?r=vehicle%2Fcreate&id=1'
+    'SCRIPT_NAME' => '/tsa/frontend/web/index.php'
+    'PHP_SELF' => '/tsa/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429548145.573
+    'REQUEST_TIME' => 1429548145
+]

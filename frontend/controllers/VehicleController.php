@@ -85,7 +85,7 @@ class VehicleController extends Controller
 
          if ($model->load(Yii::$app->request->post())) {
             $model->users_id=Yii::$app->user->id;
-            $model->time_start=date('Y-m-d h:i:s');
+            //$model->date_reg=date('Y-m-d h:i:s');
             $model->save();
            return $this->redirect(['view', 'id' => $model->id, 'users_id' => Yii::$app->user->id]);
         }  else {
