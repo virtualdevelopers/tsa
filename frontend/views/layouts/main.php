@@ -106,7 +106,7 @@ $(function(){
                 
             </div>
           	<div class="navi_top">
-        <ul id="menu">
+       <ul id="menu">
     		        	         <li><a href="index.php">Home</a>
                     </li>
                    <?php if(!empty($getid))  { ?>
@@ -115,7 +115,7 @@ $(function(){
                     </li>
                    <?php }?>
                      <li>
-                        <a href="#">General Listings</a>
+                        <a href="index.php?r=site%2Fgenerallist">General Listings</a>
                     </li>
                      <li>
                         <a href="index.php?r=site%2Fterms">Terms & Condition</a>
@@ -127,6 +127,7 @@ $(function(){
                         <a href="index.php?r=site%2Fcontactus">Contact Us</a>
                     </li>
 </ul>
+
 
 <div id="demo1"></div>
 </div>
