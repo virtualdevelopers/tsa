@@ -82,14 +82,8 @@ $this->title = 'My Yii Application';
                 
                 $cur_date = date('Y-m-d h:i:s');
                 $start_date = new DateTime($cur_date);
-$since_start = $start_date->diff(new DateTime($vehs->time_left));
-//echo $since_start->days.' days total<br>';
-//echo $since_start->y.' years<br>';
-//echo $since_start->m.' months<br>';
-//echo $since_start->d.' days<br>';
-//echo $since_start->h.' hours<br>';
-//echo $since_start->i.' minutes<br>';
-//echo $since_start->s.' seconds<br>';
+                $since_start = $start_date->diff(new DateTime($vehs->time_left));
+
 
                 ?>
 	<div class="end_time">Time Left   : <?= $since_start->d ?>days, <?= $since_start->h ?>hours </div>

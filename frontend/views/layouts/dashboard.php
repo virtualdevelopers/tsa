@@ -46,14 +46,14 @@ use yii\bootstrap\ActiveForm;
         <link href="<?php echo Yii::getAlias('@web') ?>/designe/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
         <link href="<?php echo Yii::getAlias('@web') ?>/designe/css/AdminLTE.css" rel="stylesheet" type="text/css" />
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<!--        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
         
         <link href="<?php echo Yii::getAlias('@web') ?>/designe/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
         <script src="<?php echo Yii::getAlias('@web') ?>/designe/js/fileinput.min.js"></script>
         <script src="<?php echo Yii::getAlias('@web') ?>/designe/js/fileinput_locale_<lang>.js"></script>
-        
+        -->
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>

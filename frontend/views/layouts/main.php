@@ -31,6 +31,11 @@ use yii\bootstrap\ActiveForm;
     <link href="<?php echo Yii::getAlias('@web') ?>/designe/css/font-awesome.css" rel="stylesheet">
     <link href="<?php echo Yii::getAlias('@web') ?>/designe/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo Yii::getAlias('@web') ?>/designe/css/style.css" rel="stylesheet">
+    <link href="<?php echo Yii::getAlias('@web') ?>/designe/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Morris chart -->
+        <link href="<?php echo Yii::getAlias('@web') ?>/designe/css/morris/morris.css" rel="stylesheet" type="text/css" />
+<!-- jvectormap -->
+        <link href="<?php echo Yii::getAlias('@web') ?>/designe/css/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
      <link rel="stylesheet" href="<?php echo Yii::getAlias('@web') ?>/designe/css/slicknav.css">
      
        <!-- Syntax Highlighter -->
@@ -102,39 +107,98 @@ $(function(){
             </div>
           	<div class="navi_top">
         <ul id="menu">
-    		         <li><a href="#">Home</a>
+    		        	         <li><a href="index.php">Home</a>
                     </li>
+                   <?php if(!empty($getid))  { ?>
                     <li>
-                        <a href="#">Login</a>
+                        <a href="<?php echo Yii::getAlias('@web') ?>/index.php?r=vehicle%2Fmygarage&id=<?php echo $getid ?>">Account</a>
                     </li>
-                    <li>
-                        <a href="#">Account</a>
-                    </li>
-                     <li>
-                        <a href="#">Registration</a>
-                    </li>
-                     <li>
-                        <a href="#">Contact Us</a>
-                    </li>
+                   <?php }?>
                      <li>
                         <a href="#">General Listings</a>
                     </li>
                      <li>
-                        <a href="#">Terms & Condition</a>
+                        <a href="index.php?r=site%2Fterms">Terms & Condition</a>
                     </li>
                      <li>
-                        <a href="#">FAQ</a>
+                        <a href="index.php?r=site%2Ffaq">FAQ</a>
                     </li>
                      <li>
-                        <a href="#">Account</a>
+                        <a href="index.php?r=site%2Fcontactus">Contact Us</a>
                     </li>
 </ul>
 
 <div id="demo1"></div>
 </div>
+			
 			<div class="banner">
-            <figure><img src="<?php echo Yii::getAlias('@web') ?>/designe/images/slider.png" class="img-responsive"></figure>
+           	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+    <!-- First slide -->
+    <div class="item active">
+      <div class="col-md-12">
+        <h1 class="text-center heading">Welcome To Trade Stock Auction</h1>
+        <p class="text-center heading_pra">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+        Ut enim ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit in voluptate velit 
+
+esse cillum dolore eu fugiat nulla pariatur. <br> sunt in culpa qui officia deserunt mollit anim id est aborum.</p>
+        </div>
+
+ 
+    </div><!-- /.item -->
+    
+    <div class="item ">
+     
+          <div class="col-md-12">
+       <h1 class="text-center heading">Welcome To Trade Stock Auction</h1>
+      <p class="text-center heading_pra">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+        Ut enim ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit in voluptate velit 
+
+esse cillum dolore eu fugiat nulla pariatur. <br> sunt in culpa qui officia deserunt mollit anim id est aborum.</p>
+        </div>>
+        
+
+    
+    </div>
+    
+      <div class="item ">
+    <div class="col-md-12">
+        <h1 class="text-center heading">Welcome To Trade Stock Auction</h1>
+      <p class="text-center heading_pra">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+        Ut enim ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit in voluptate velit 
+
+esse cillum dolore eu fugiat nulla pariatur. <br> sunt in culpa qui officia deserunt mollit anim id est aborum.</p>
+        </div>
+        
+
+      
+    </div>
+
+
+
+  </div><!-- /.carousel-inner -->
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic"
+     role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic"
+     role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div><!-- /.carousel -->
             </div>
+            
+            
             <div class="arrow_down"><figure><a href="#auction" class="scroll"><img src="<?php echo Yii::getAlias('@web') ?>/designe/images/arrow.png"></a></figure></div>
              
             <div class="col-md-4">

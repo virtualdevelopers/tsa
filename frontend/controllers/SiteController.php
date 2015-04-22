@@ -137,6 +137,82 @@ class SiteController extends Controller
         }
     }
 
+    
+    
+    /*********************** With Different layout ***********************/
+    public function actionFaq()
+    {
+         $this->layout = 'webmain';
+         
+       $model = new User();
+        
+                
+
+    
+        if(isset($_POST['reg_from']) && $_POST['reg_from']==1)
+        {        if ($model->load(Yii::$app->request->post())) {
+           
+            $model->setPassword($model->password_hash);
+            $model->save();
+            
+        
+        }
+        }
+        
+        
+        
+        $model_login = new LoginForm();
+        if ($model_login->load(Yii::$app->request->post()) && $model_login->login()) {
+           // return $this->goBack($defaultUrl = "/index.php?r=site/");
+             Yii::$app->user->id;
+            return $this->redirect(['site/faq']);
+        } 
+        
+        return $this->render('faq',['model_login'=>$model_login]);
+         //error_reporting(0);
+      //return $this->render('faq');
+    }
+    
+     public function actionContactus()
+    {
+         $this->layout = 'webmain';
+         //error_reporting(0);
+      return $this->render('contactus');
+    }
+    
+     public function actionTerms()
+    {
+        $this->layout = 'webmain';
+         
+       $model = new User();
+        
+                
+
+    
+        if(isset($_POST['reg_from']) && $_POST['reg_from']==1)
+        {        if ($model->load(Yii::$app->request->post())) {
+           
+            $model->setPassword($model->password_hash);
+            $model->save();
+            
+        
+        }
+        }
+        
+        
+        
+        $model_login = new LoginForm();
+        if ($model_login->load(Yii::$app->request->post()) && $model_login->login()) {
+           // return $this->goBack($defaultUrl = "/index.php?r=site/");
+             Yii::$app->user->id;
+            return $this->redirect(['site/terms']);
+        } 
+        
+        return $this->render('terms',['model_login'=>$model_login]);
+         //return $this->render('terms');
+    }
+    
+    
     public function actionAbout()
     {
         return $this->render('about');
